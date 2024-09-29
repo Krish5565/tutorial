@@ -8,30 +8,30 @@
 :vpi_module "/usr/lib/x86_64-linux-gnu/ivl/v2005_math.vpi";
 :vpi_module "/usr/lib/x86_64-linux-gnu/ivl/va_math.vpi";
 :vpi_module "/usr/lib/x86_64-linux-gnu/ivl/v2009.vpi";
-S_0x55e11d6e2e60 .scope package, "$unit" "$unit" 2 1;
+S_0x5649ce710150 .scope package, "$unit" "$unit" 2 1;
  .timescale -9 -12;
-S_0x55e11d6e2ff0 .scope module, "or_test" "or_test" 3 1;
- .timescale -9 -12;
-    .port_info 0 /INPUT 1 "a";
-    .port_info 1 /INPUT 1 "b";
-    .port_info 2 /OUTPUT 1 "y";
-o0x7fb3edeba018 .functor BUFZ 1, C4<z>; HiZ drive
-v0x55e11d6f95b0_0 .net "a", 0 0, o0x7fb3edeba018;  0 drivers
-o0x7fb3edeba048 .functor BUFZ 1, C4<z>; HiZ drive
-v0x55e11d6f9680_0 .net "b", 0 0, o0x7fb3edeba048;  0 drivers
-v0x55e11d6f9750_0 .net "y", 0 0, L_0x55e11d6f9850;  1 drivers
-S_0x55e11d6d1ec0 .scope module, "or_gate" "or_gate" 3 6, 4 1 0, S_0x55e11d6e2ff0;
+S_0x5649ce7102e0 .scope module, "or_test" "or_test" 3 1;
  .timescale -9 -12;
     .port_info 0 /INPUT 1 "a";
     .port_info 1 /INPUT 1 "b";
     .port_info 2 /OUTPUT 1 "y";
-L_0x55e11d6f9850 .functor OR 1, o0x7fb3edeba018, o0x7fb3edeba048, C4<0>, C4<0>;
-v0x55e11d6d20a0_0 .net "a", 0 0, o0x7fb3edeba018;  alias, 0 drivers
-v0x55e11d6f93d0_0 .net "b", 0 0, o0x7fb3edeba048;  alias, 0 drivers
-v0x55e11d6f9490_0 .net "y", 0 0, L_0x55e11d6f9850;  alias, 1 drivers
-    .scope S_0x55e11d6e2ff0;
+o0x7fc683792018 .functor BUFZ 1, C4<z>; HiZ drive
+v0x5649ce71f930_0 .net "a", 0 0, o0x7fc683792018;  0 drivers
+o0x7fc683792048 .functor BUFZ 1, C4<z>; HiZ drive
+v0x5649ce71fa00_0 .net "b", 0 0, o0x7fc683792048;  0 drivers
+v0x5649ce71fad0_0 .net "y", 0 0, L_0x5649ce71fbd0;  1 drivers
+S_0x5649ce6d6cf0 .scope module, "or_gate" "or_gate" 3 6, 4 1 0, S_0x5649ce7102e0;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "y";
+L_0x5649ce71fbd0 .functor OR 1, o0x7fc683792018, o0x7fc683792048, C4<0>, C4<0>;
+v0x5649ce6e8bd0_0 .net "a", 0 0, o0x7fc683792018;  alias, 0 drivers
+v0x5649ce71f750_0 .net "b", 0 0, o0x7fc683792048;  alias, 0 drivers
+v0x5649ce71f810_0 .net "y", 0 0, L_0x5649ce71fbd0;  alias, 1 drivers
+    .scope S_0x5649ce7102e0;
 T_0 ;
-    %vpi_call/w 3 13 "$dumpfile", "or.vcd" {0 0 0};
+    %vpi_call/w 3 13 "$dumpfile", "waves.vcd" {0 0 0};
     %vpi_call/w 3 14 "$dumpvars" {0 0 0};
     %end;
     .thread T_0;

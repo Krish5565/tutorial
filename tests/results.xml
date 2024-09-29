@@ -1,6 +1,6 @@
 <testsuites name="results">
   <testsuite name="all" package="all">
-    <property name="random_seed" value="1727590255" />
-    <testcase name="or_test" classname="or_test" file="/mnt/c/Users/91799/venv/lib/python3.10/site-packages/tutorial/tests/or_test.py" lineno="5" time="0.010329484939575195" sim_time_ns="4.001" ratio_time="387.3378027466821" />
+    <property name="random_seed" value="1727617734" />
+    <testcase name="or_test" classname="or_test" file="/mnt/c/Users/91799/venv/lib/python3.10/site-packages/tutorial/tests/or_test.py" lineno="5" time="0.004223346710205078" sim_time_ns="4.001" ratio_time="947.3529583380378" />
   </testsuite>
 </testsuites>
